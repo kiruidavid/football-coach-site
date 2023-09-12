@@ -81,12 +81,13 @@ section{
     justify-content: flex-start;
 } 
 .round-img{
-    border-radius: 25%;
+    border-radius: 15%;
     width: 500px; 
-    height: 500px; 
+    height: 350px; 
     background-color: var(--bg-color); 
     top: 0; 
-    left: 0;
+    left: 0; 
+    margin-left: 12px;
 } 
 .main-content h4{
  font-size: 1.6rem;
@@ -432,4 +433,46 @@ button[type="submit"]:hover {
     color: var(--main-color); 
     text-shadow: 3px 3px 20px var(--main-color); 
     transform: translateY(-5px) scale(1.03)
+}  
+.scroll-top{
+    color: var(--main-color); 
+    font-size: 45px; 
+    width: 45px; 
+    border-radius: 50%; 
+    height: 45px; 
+    
 } 
+@media  (max-width: 1700px) {
+    header{
+        padding: 20px 8%;
+    } 
+    header.sticky{
+        padding: 14px 8%;
+    } 
+    section {
+      padding: 90px 8% 80px;
+    } 
+    footer{
+        padding: 18px 8%;
+    } 
+    .logo{
+        font-size: 28px;
+    }
+} 
+@media  (max-width: 1380px) {
+    header{
+        padding: 20px 5%;
+    } 
+    header.sticky{
+        padding: 14px 5%;
+    } 
+    section {
+      padding: 90px 5% 80px;
+    } 
+    footer{
+        padding: 18px 5%;
+    } 
+    .hero{
+        m: 28px;
+    }
+}
